@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #f8f9fa 25%, #e9ecef 25%, #e9ecef 50%, #dee2e6 50%, #dee2e6 75%, #ced4da 75%);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .profile {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    flex: 1;
+  }
+
+  .profile ul {
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none;
+    font-style: italic;
+  }
+  
+  .profile ul li {
+    margin-bottom: 10px;
+  }
+
+  .profile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+  
+  .profile a {
+    font-weight: 500;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  footer {
+    background-color: #f8f9fa;
+    padding: 1px;
+    text-align: center;
+    font-size: 13px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a1c4fd, #c2e9fb, #c2e9fb, #ffc3a0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-header img {
+    margin-right: 30px;
+  }
+
+  .profile-header button {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .profile-header button:hover {
+    background-color: #333;
+  }
